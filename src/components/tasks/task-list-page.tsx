@@ -250,8 +250,7 @@ export async function TaskListPage({ task, category }: { task: TaskKey; category
                         <ContentImage src={getArticleCardImage(post)} alt="" fill className="object-cover transition duration-500 group-hover:scale-[1.03]" />
                       </div>
                       <div className="p-4">
-                        <p className="text-[11px] font-semibold uppercase tracking-wider text-[#5a6562]">{formatArticleDate(post)}</p>
-                        <h3 className="font-display mt-2 line-clamp-2 text-lg font-semibold leading-snug text-[#1a1a1a]">{post.title}</h3>
+                        <h3 className="font-display line-clamp-2 text-lg font-semibold leading-snug text-[#1a1a1a]">{post.title}</h3>
                         {post.summary ? <p className={`mt-2 line-clamp-2 text-sm leading-relaxed ${ui.muted}`}>{post.summary}</p> : null}
                       </div>
                     </Link>
