@@ -97,11 +97,11 @@ export default function ContactPage() {
                 Prefer email? Reach the desk directly—we monitor this inbox during business hours.
               </p>
               <a
-                href={`mailto:hello@${SITE_CONFIG.domain}`}
+                href={`mailto:${process.env.NEXT_PUBLIC_CONTACT_EMAIL || `hello@${SITE_CONFIG.domain}`}`}
                 className="mt-5 inline-flex items-center gap-2 rounded-lg border border-[#cfe8e0] bg-white px-4 py-3 text-sm font-semibold text-[#1a1a1a] transition hover:bg-[#f4faf8]"
               >
                 <Mail className="h-4 w-4" />
-                hello@{SITE_CONFIG.domain}
+                {process.env.NEXT_PUBLIC_CONTACT_EMAIL || `hello@${SITE_CONFIG.domain}`}
               </a>
               <div className="mt-6 flex flex-col gap-4 rounded-xl border border-[#cfe8e0] bg-white/90 p-4 text-sm text-[#5a6562]">
                 <div className="flex gap-3">

@@ -409,8 +409,6 @@ function EditorialHome({ primaryTask, articlePosts }: { primaryTask?: EnabledTas
                   </div>
                   <div className="min-w-0 flex-1 py-0.5">
                     <p className="text-[11px] font-medium uppercase tracking-wider text-[#5a6562]">
-                      {post.publishedAt ? new Date(post.publishedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : ''}
-                      {post.publishedAt ? ' · ' : ''}
                       {getPostAuthor(post)}
                     </p>
                     <h4 className={`font-display mt-1 line-clamp-2 text-lg font-semibold leading-snug ${tone.title}`}>{post.title}</h4>
